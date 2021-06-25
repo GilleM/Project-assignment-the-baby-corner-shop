@@ -6,11 +6,41 @@ body {
     background: url('/media/bg_photo.jpg') no-repeat center center fixed;
     background-size: cover;
     /* height: calc(100vh - 164px); */
-    color: #555;
-    font-family: 'Lato';
+    color: rgb(34, 34, 34);
+    font-family: 'Raleway', sans-serif;
 }
 
+.nav-background {
+    background-color: rgba(39, 39, 39, 0.589);
+}
 
+.nav-link {
+    color: rgb(255, 223, 223);
+}
+
+.nav-link:hover {
+    color: white;
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+     -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+}
+
+.shop-now-button {
+    background-color: rgb(190, 113, 113);
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.shop-now-button:hover {
+    background-color: rgb(34, 34, 34);
+    color: rgb(190, 113, 113);
+    -webkit-transition: background-color 0.5s ease-out;
+    -moz-transition: background-color 0.5s ease-out;
+    -o-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+}
 
 /* MEDIA QUERIES */
 
