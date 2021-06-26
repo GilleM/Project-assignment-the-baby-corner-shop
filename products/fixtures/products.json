@@ -112,7 +112,7 @@
       "description": "First day at creche for your baby boy? Want to leave a nanny in awe? Put it in the cart!",
       "price": 19.99,
       "category": 1,
-      "image_url": "https://cdn.shopify.com/s/files/1/0336/7256/0684/products/7325854942799_2_2048x2048.jpg?v=1605410103,
+      "image_url": "https://cdn.shopify.com/s/files/1/0336/7256/0684/products/7325854942799_2_2048x2048.jpg?v=1605410103",
       "image": "dungaree_9.jpg"
     }
   },
@@ -252,7 +252,7 @@
     "fields": {
       "sku": "pp5003161326",
       "name": "Baby Maya Jeans",
-      "description": "Stylish "girl in the city" jeans.",
+      "description": "Stylish girl in the city jeans.",
       "price": 20.99,
       "category": 3,
       "image_url": "https://i.pinimg.com/originals/e5/69/b2/e569b29a46c70bf4c763c3db685c2032.jpg",
@@ -492,5 +492,5 @@
       "image_url": "https://busytoddler.com/wp-content/uploads/2020/09/5125hFusyL._AC_SL1488_-650x1024.jpg",
       "image": "toy_5.jpg"
     }
-  },
+  }
 ]
