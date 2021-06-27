@@ -16,11 +16,11 @@
                 Clothing
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Dungarees</a>
-                <a href="" class="dropdown-item">Shirts</a>
-                <a href="" class="dropdown-item">Jeans</a>
-                <a href="" class="dropdown-item">Jackets</a>
-                <a href="" class="dropdown-item">All Clothing</a>
+                <a href="{% url 'products' %}?category=dungarees"  class="dropdown-item">Dungarees</a>
+                <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Shirts</a>
+                <a href="{% url 'products' %}?category=pants" class="dropdown-item">Pants</a>
+                <a href="{% url 'products' %}?category=jackets" class="dropdown-item">Jackets</a>
+                <a href="{% url 'products' %}?category=dungarees,shirts,pants,jackets" class="dropdown-item">All Clothing</a>
             </div>
         </li>
 
@@ -29,7 +29,7 @@
                 Shoes
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="shoes-link">
-                <a href="" class="dropdown-item">All shoes</a>
+                <a href="{% url 'products' %}?category=shoes" class="dropdown-item">All shoes</a>
             </div>
         </li>
 
@@ -38,20 +38,9 @@
                 Prams and Toys
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Prams &amp; Trolleys</a>
-                <a href="" class="dropdown-item">Toys</a>
-                <a href="" class="dropdown-item">All Prams and Toys</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=prams_and_trolleys" class="dropdown-item">Prams &amp; Trolleys</a>
+                <a href="{% url 'products' %}?category=toys" class="dropdown-item">Toys</a>
+                <a href="{% url 'products' %}?category=prams_and_trolleys,toys" class="dropdown-item">All Prams and Toys</a>
             </div>
         </li>
     </ul>
