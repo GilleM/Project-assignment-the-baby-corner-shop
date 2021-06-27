@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 import os
+import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -73,7 +74,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',              #required by allauth (to access HTTP objects in our templates)
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'bag.contexts.bag_contents'
             ],
         },
     },
@@ -105,6 +105,7 @@ WSGI_APPLICATION = 'baby_corner.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -112,6 +113,9 @@ DATABASES = {
     }
 }
 
+#DATABASES = {
+#    'default': dj_database_url.parse('postgres://gdbdhkferjkhxs:1f58447f4ea17cb015809028839584f8a831bc5e000e4b38b4f8631ff1dda7c6@ec2-54-155-208-5.eu-west-1.compute.amazonaws.com:5432/d50og55a91pu2t')
+#}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
