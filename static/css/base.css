@@ -3,11 +3,33 @@ html {
 }
 
 body {
-    background: url('/media/bg_photo.jpg') no-repeat center center fixed;
-    background-size: cover;
-    /* height: calc(100vh - 164px); */
     color: rgb(34, 34, 34);
     font-family: 'Raleway', sans-serif;
+}
+
+.main-jumbo-container {
+    background: url('/media/bg_photo.jpg') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+    height: 70vh;
+}
+
+/* .opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(189, 189, 189, 0.4);
+    z-index: -1;
+} */
+.intro-container {
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
 }
 
 .nav-background {
@@ -23,7 +45,7 @@ body {
     cursor: pointer;
     -webkit-transition: background-color 2s ease-out;
     -moz-transition: background-color 2s ease-out;
-     -o-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
     transition: background-color 2s ease-out;
 }
 
@@ -44,18 +66,28 @@ body {
 
 .btn-outline-black {
     background: rgb(78, 14, 14);
-    color: rgb(0, 0, 0) !important; /* use important to override link colors for <a> elements */
+    color: rgb(0, 0, 0) !important;
+    /* use important to override link colors for <a> elements */
     border: 1px solid rgb(0, 0, 0);
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
+}
+
+a.category-badge>span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.text-black {
+    color: #000 !important;
 }
 
 /* MEDIA QUERIES */
@@ -78,9 +110,9 @@ body {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 
