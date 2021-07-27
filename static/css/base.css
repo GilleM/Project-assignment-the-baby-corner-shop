@@ -74,7 +74,6 @@ body {
 .btn-outline-black {
     background: rgb(78, 14, 14);
     color: rgb(0, 0, 0) !important;
-    /* use important to override link colors for <a> elements */
     border: 1px solid rgb(0, 0, 0);
 }
 
@@ -116,89 +115,7 @@ a.category-badge>span.badge:hover {
     justify-content: space-between;
 }
 
-.arrows {
-    width: 9rem;
-}
-
-.arrow {
-    background-color: #D1D1C7;
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-}
-
-.arrow i {
-    font-size: 2rem;
-}
-
-.clickable {
-    background-color: #153243;
-    transition: all .25s ease-out;
-}
-
-.clickable:hover {
-    transform: scale(1.15);
-}
-
-.clickable i {
-    color: #EDEDE9;
-}
-
-.slideshow-container {
-    margin-top: 100px;
-}
-
-.new-item-slider-container {
-    display: block;
-    margin: auto;
-    overflow: hidden;
-    width: 30rem
-}
-
-.slider-wrapper {
-    max-width: 95%;
-    overflow: hidden;
-    display: block;
-    margin: auto;
-}
-
-.new-item-slider {
-    list-style: none;
-    width: 100%;
-    transition: all .5s ease;
-    display: flex;
-    flex-direction: row;
-}
-
-.item-details {
-    margin: 1rem;
-}
-
-.item-details h2 {
-    font-weight: 400;
-    font-size: 1.75rem;
-}
-
-.item-details p {
-    font-size: 1.5rem;
-    margin-bottom: .5rem;
-}
-
-.item-container a img {
-    width: 28rem;
-    height: 40rem;
-    object-fit: cover;
-    transition: all .25s ease-in;
-}
-
-.item-container a img:hover {
-    filter: brightness(50%);
-}
-
-
-* {
-    box-sizing: border-box
-}
+/* SLIDE PICTURES ON THE INDEX.HTML */
 
 /* Slideshow container */
 .slideshow-container {
@@ -304,6 +221,20 @@ a.category-badge>span.badge:hover {
     to {
         opacity: 1
     }
+}
+
+/* TOP button */
+.btt-button {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(141, 108, 18, 0.459);
+}
+
+.btt-link {
+    cursor: pointer;
 }
 
 /* MEDIA QUERIES */
