@@ -238,7 +238,9 @@ a.category-badge>span.badge:hover {
     background-color: rgba(141, 108, 18, 0.459);
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
