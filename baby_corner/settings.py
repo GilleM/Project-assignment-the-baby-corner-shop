@@ -120,13 +120,6 @@ else:
     }
 
 
-#DATABASES = {
-#    'default': dj_database_url.parse('postgres://gdbdhkferjkhxs:1f58447f4ea17cb015809028839584f8a831bc5e000e4b38b4f8631ff1dda7c6@ec2-54-155-208-5.eu-west-1.compute.amazonaws.com:5432/d50og55a91pu2t')
-#}
-
-# Password validation
-# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',

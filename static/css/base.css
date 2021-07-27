@@ -240,11 +240,11 @@ a.category-badge>span.badge:hover {
 
 /* FREE DELIVERY div */
 .free-delivery {
-    background-color: rgb(166, 182, 19);
-    max-width: 40%;
+    background-color: rgba(178, 197, 6, 0.788);
     margin: auto;
     text-shadow: 1px 1px rgb(78, 78, 78);
-    font-size: 1rem;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
 }
 /* MEDIA QUERIES */
 
