@@ -1,19 +1,44 @@
 <!-- JS takes from W3School: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
 
 <script type="text/javascript">
-var slideIndex = 0;
-showSlides();
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
 </script>
+
+<script>
+const myCarousel = document.getElementById('myCarousel')
+  myCarousel.addEventListener('slid.bs.carousel', function () {
+    const activeItem = this.querySelector(".active");
+    document.querySelector(".testi-img img").src = activeItem.getAttribute("data-img");
+    document.querySelector(".testi-img .circle").style.backgroundColor = activeItem.getAttribute("data-color");
+  })
+</script>
+
+
+

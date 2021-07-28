@@ -22,6 +22,9 @@
 
 {% block content %}
 
+<div class="intro-text">
+    <p>The Baby Corner is the best web store in which you can find well chosen, curely fabricated items and clothes for your newborn or toddler. The delivery is fast, ordering is easy. Let The Baby Corner do the job for you and make the new entry for your baby the best ever. </p>
+</div>
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -56,14 +59,58 @@
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
 </div>
 
 
 
 
-<div>
-    <p>The Baby Corner is the best web store in which you can find well chosen, curely fabricated items and clothes for your newborn or toddler. The delivery is fast, ordering is easy. Let The Baby Corner do the job for you and make the new entry for your baby the best ever. </p>
-</div>
+
+<!-- Testimonials -->
+
+<section class="testimonial-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 testi-img">
+          <div class="img-box">
+            <div class="circle"></div>
+            <div class="img-box-inner">
+              <img src="../media/testimonials/testimonial_1.jpg" alt="testi img">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+        <div id="myCarousel" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item testi-item active" data-color="#fb9c9a" data-img="../media/testimonials/testimonial_1.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis ratione, harum doloremque aspernatur aliquid quaerat dolores voluptates recusandae qui repellat illum, amet ipsa debitis fugiat commodi nemo suscipit ad!</p>
+                <h3>john doe 1 - <span>web developer</span></h3>
+            </div>
+            <div class="carousel-item testi-item" data-color="#fbd39a" data-img="../media/testimonials/testimonial_2.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis ratione, harum doloremque aspernatur aliquid quaerat dolores voluptates recusandae qui repellat illum, amet ipsa debitis fugiat commodi nemo suscipit ad!</p>
+                <h3>john doe 2 - <span>web developer</span></h3>
+            </div>
+            <div class="carousel-item testi-item" data-color="#9ab0fb" data-img="../media/testimonials/testimonial_3.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis ratione, harum doloremque aspernatur aliquid quaerat dolores voluptates recusandae qui repellat illum, amet ipsa debitis fugiat commodi nemo suscipit ad!</p>
+                <h3>john doe 3 - <span>web developer</span></h3>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <img src="../media/testimonials/left-arrow.png" alt="prev">
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <img src="../media/testimonials/right-arrow.png" alt="prev">
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 <div>
     <p>The Baby Corner is the best web store in which you can find well chosen, curely fabricated items and clothes for your newborn or toddler. The delivery is fast, ordering is easy. Let The Baby Corner do the job for you and make the new entry for your baby the best ever. </p>
 </div>
@@ -83,3 +130,13 @@
 {{ block.super }}
 {% include 'home/includes/index_script.html' %}
 {% endblock %}
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  const myCarousel = document.getElementById('myCarousel')
+  myCarousel.addEventListener('slid.bs.carousel', function () {
+    const activeItem = this.querySelector(".active");
+    document.querySelector(".testi-img img").src = activeItem.getAttribute("data-img");
+    document.querySelector(".testi-img .circle").style.backgroundColor = activeItem.getAttribute("data-color");
+  })
+</script>
