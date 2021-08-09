@@ -37,6 +37,10 @@ body {
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
 }
 
+.sub-intro-container {
+    margin-top: 100px;
+}
+
 .nav-background {
     background-color: rgb(39 39 39);
 }
@@ -285,6 +289,10 @@ a.category-badge>span.badge:hover {
     border-radius: 0;
 }
 
+footer {
+    margin-top: 100px;
+}
+
 /* Responsive */
 @media(max-width:991px){
     .testi-img .img-box{
@@ -499,5 +507,15 @@ a.category-badge>span.badge:hover {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .nav-link {
+        padding: 0px;
+    }
+
+    .dl .ol .ul {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding-left: 0px;
     }
 }
