@@ -9,7 +9,7 @@ Accessing from the Gitpod terminal:
 - python3 manage.py loaddata categories
 - python3 manage.py loaddata projects
 
-In case if superuser would need to be created, please write:
+Accessing as a superuser:
 - python3 manage.py createsuperuser
 and insert your name, email and password.
 
