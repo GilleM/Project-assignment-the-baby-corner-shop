@@ -541,7 +541,16 @@ footer {
 }
 
 @media(max-width:767px){
-    /* .testi-img{
-        margin-bottom: 25px;
-    } */
+    .shopping-bag-div {
+        margin-top: 25px;
+    }
+    .nav-link {
+        padding: 0px;
+        margin-bottom: 1rem;
+    }
+
+    .dl .ol .ul {
+        margin-top: 1rem;
+        padding-left: 0px;
+    }
 }
