@@ -75,10 +75,30 @@ body {
     transition: background-color 0.5s ease-out;
 }
 
-.btn-outline-black {
+
+.keep-shopping-button {
     background: rgb(78, 14, 14);
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255);
     border: 1px solid rgb(0, 0, 0);
+}
+
+.keep-shopping-button:hover {
+    background: rgb(36, 2, 2);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+.add-to-bag-button {
+    background: rgb(209, 209, 209);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.add-to-bag-button:hover {
+    background: rgb(150, 149, 149);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(180, 180, 180);
 }
 
 .overlay {
@@ -293,27 +313,6 @@ footer {
     margin-top: 100px;
 }
 
-/* Responsive */
-@media(max-width:991px){
-    .testi-img .img-box{
-        max-width: 300px;
-    }
-    .testi-img .circle{
-        height: 300px;
-        width: 300px;
-    }
-    .testi-img .img-box-inner{
-        border-radius: 0 0 150px 150px;
-    }
-    .testi-img .img-box-inner img{
-        max-width: 230px;
-    }
-}
-@media(max-width:767px){
-    .testi-img{
-        margin-bottom: 25px;
-    }
-}
 
 /* Allauth form formatting */
 
@@ -475,6 +474,18 @@ footer {
 /* MEDIA QUERIES */
 
 
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .search-button {
+        color: white;
+    }
+}
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -488,18 +499,13 @@ footer {
     .header-container {
         padding-top: 250px;
     }
-}
 
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 80%;
+    .search-button {
+        color: white;
     }
 }
 
 
-
-/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -511,11 +517,31 @@ footer {
 
     .nav-link {
         padding: 0px;
+        margin-bottom: 1rem;
     }
 
     .dl .ol .ul {
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            padding-left: 0px;
+        margin-top: 1rem;
+        padding-left: 0px;
     }
+
+    /* .testi-img .img-box{
+        max-width: 300px;
+    }
+    .testi-img .circle{
+        height: 300px;
+        width: 300px;
+    }
+    .testi-img .img-box-inner{
+        border-radius: 0 0 150px 150px;
+    }
+    .testi-img .img-box-inner img{
+        max-width: 230px;
+    } */
+}
+
+@media(max-width:767px){
+    /* .testi-img{
+        margin-bottom: 25px;
+    } */
 }
