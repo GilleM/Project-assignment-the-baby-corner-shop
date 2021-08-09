@@ -1,6 +1,5 @@
-<!-- JS takes from W3School: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+// <!-- JS takes from W3School: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
 
-<script type="text/javascript">
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -40,10 +39,3 @@ const myCarousel = document.getElementById('myCarousel')
     document.querySelector(".testi-img img").src = activeItem.getAttribute("data-img");
     document.querySelector(".testi-img .circle").style.backgroundColor = activeItem.getAttribute("data-color");
   })
-
-
-  
-</script>
-
-
-

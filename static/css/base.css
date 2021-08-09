@@ -199,91 +199,62 @@ a.category-badge>span.badge:hover {
     background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 5s;
-    animation-name: fade;
-    animation-duration:5s;
+/* Testimonials */
+ 
+.testimonial{
+    width: 720px;
+    height: auto;
+    margin: 120px auto;
 }
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
+  
+.testimonial .item{
+    width: 220px;
+    margin: 0 10px;
+    float: left;
+    background: #6ddfc0;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.125);
 }
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
+  
+.testimonial .item .img{
+    padding: 20px;
 }
-.slide-img {
-    margin-left: 25%;
-} 
-
-.testimonial-section{
-    background-color: #1d1d4b;
-    padding: 80px 0;
-    min-height: 100vh;
+  
+.testimonial .item .img img{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
 }
-.testi-img .img-box{
-    max-width: 360px;
-    margin:auto;
-    text-align: center;
-    position: relative;
-}
-.testi-img .circle{
-    height: 360px;
-    width: 360px;
-    background-color: #df2623;
-    position: absolute;
-    border-radius: 50%;
-    left: 0;
-    bottom: 0;
-    transition: all 0.5s ease;
-}
-.testi-img .img-box-inner{
-    position: relative;
-    border-radius: 0 0 180px 180px;
-    overflow:hidden;
-}
-.testi-img .img-box-inner img{
-    max-width: 310px;
-}
-.testimonial-section .carousel-inner{
+  
+.testimonial .item .name{
     margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
-.testimonial-section .carousel-control-prev{
-    margin-right: 10px;
+  
+.testimonial .item .content{
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 20px;
+    text-align: center;
 }
-.testimonial-section .carousel-control-next, 
-.testimonial-section .carousel-control-prev{
-    position: relative;
-    height: 35px;
-    width: 35px;
-    background-color: #fb9c9a;   
-    display: inline-flex;
-    border-radius: 50%;
+  
+.testimonial .item .content h1{
+    margin-bottom: 10px;
+    color: #6ddfc0;
 }
-.testimonial-section .carousel-control-prev img,
-.testimonial-section .carousel-control-next img{
-    width: 15px;
+  
+.testimonial .item .content p{
+    line-height: 20px;
+    margin-bottom: 15px;
 }
-.testi-item h3,
-.testi-item p{
-    font-size: 18px;
-}
-.testi-item h3{
-    text-transform: capitalize;
+  
+.testimonial .item .content .stars img{
+    width: 25px;
 }
 
 /* Product Form */
