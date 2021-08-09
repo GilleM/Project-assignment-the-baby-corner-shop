@@ -245,6 +245,11 @@
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
+        $('.carousel').carousel();
+        $(".carousel>.carousel-inner>.carousel-item").first().addClass("active");
+        $("#feedbackModalSubmit").click(function () {
+            $("#feedbackModalForm").submit();
+        });
     </script>
     {% endblock %}
     

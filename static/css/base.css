@@ -223,58 +223,65 @@ a.category-badge>span.badge:hover {
     background-color: #717171;
 }
 
-/* Testimonials */
- 
-.testimonial{
-    width: 720px;
-    height: auto;
-    margin: 120px auto;
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration:5s;
 }
-  
-.testimonial .item{
-    width: 220px;
-    margin: 0 10px;
-    float: left;
-    background: #6ddfc0;
-    border-radius: 25px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.125);
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
-  
-.testimonial .item .img{
-    padding: 20px;
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
-  
-.testimonial .item .img img{
-    width: 100px;
-    display: block;
-    margin: 0 auto;
+.slide-img {
+    margin-left: 25%;
 }
-  
-.testimonial .item .name{
-    margin-bottom: 20px;
+
+.testi-img .img-box{
+    max-width: 360px;
+    margin:auto;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    position: relative;
 }
-  
-.testimonial .item .content{
-    background: #fff;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    padding: 20px;
-    text-align: center;
+.testi-img .circle{
+    height: 360px;
+    width: 360px;
+    background-color: #df2623;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
 }
-  
-.testimonial .item .content h1{
-    margin-bottom: 10px;
-    color: #6ddfc0;
+.testi-img .img-box-inner{
+    position: relative;
+    border-radius: 0 0 180px 180px;
+    overflow:hidden;
 }
-  
-.testimonial .item .content p{
-    line-height: 20px;
-    margin-bottom: 15px;
+.testi-img .img-box-inner img{
+    max-width: 310px;
+}
+
+.testi-item h3,
+.testi-item p{
+    font-size: 18px;
 }
   
 .testimonial .item .content .stars img{
@@ -464,6 +471,13 @@ footer {
     border-bottom-color: #343a40 !important;
 }
 
+.btn-fab {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+}
+
 .bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
@@ -514,7 +528,6 @@ footer {
     body {
         height: calc(100vh - 116px);
     }
-
     .nav-link {
         padding: 0px;
         margin-bottom: 1rem;
