@@ -484,6 +484,10 @@ footer {
     overflow-y: auto;
 }
 
+.baby-corner-section {
+    margin: 50px;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -537,20 +541,6 @@ footer {
         margin-top: 1rem;
         padding-left: 0px;
     }
-
-    /* .testi-img .img-box{
-        max-width: 300px;
-    }
-    .testi-img .circle{
-        height: 300px;
-        width: 300px;
-    }
-    .testi-img .img-box-inner{
-        border-radius: 0 0 150px 150px;
-    }
-    .testi-img .img-box-inner img{
-        max-width: 230px;
-    } */
 }
 
 @media(max-width:767px){
@@ -565,5 +555,9 @@ footer {
     .dl .ol .ul {
         margin-top: 1rem;
         padding-left: 0px;
+    }
+
+    .img-thumbnail {
+        max-width: none;
     }
 }

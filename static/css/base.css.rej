@@ -1,8 +1,0 @@
-diff a/static/css/base.css b/static/css/base.css	(rejected hunks)
-@@ -544,4 +557,4 @@ footer {
-     /* .testi-img{
-         margin-bottom: 25px;
-     } */
--}
-\ No newline at end of file
-+}

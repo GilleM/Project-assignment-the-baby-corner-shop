@@ -27,8 +27,6 @@
 {% block content %}
 
 
-
-
 {% if is_superuser %}
   <!-- Button trigger modal -->
   <div class="btn-fab">
@@ -60,7 +58,6 @@
         </ul>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
@@ -105,12 +102,12 @@
 {% endif %}
 
 <div class="intro-text">
-    <p>
+    <h2>
         The Baby Corner is the best web store in which you can find well chosen,
         curely fabricated items and clothes for your newborn or toddler.
         The delivery is fast, ordering is easy.
         Let The Baby Corner do the job for you and make the new entry for your baby the best ever.
-    </p>
+    </h2>
 </div>
 
 <!-- Testimonials -->
@@ -150,14 +147,14 @@
   </a>
 </div>
 
-
-<div>
-  <p>The Baby Corner is the best web store in which you can find well chosen, curely fabricated items and clothes for your newborn or toddler. The delivery is fast, ordering is easy. Let The Baby Corner do the job for you and make the new entry for your baby the best ever. </p>
-</div>
-<div>
-    <p>The Baby Corner is the best web store in which you can find well chosen, curely fabricated items and clothes for your newborn or toddler. The delivery is fast, ordering is easy. Let The Baby Corner do the job for you and make the new entry for your baby the best ever. </p>
-</div>
-
+<section class="baby-corner-section">
+  <div>
+    <p>The materials is organic, well suited for your baby's skin. </p>
+  </div>
+  <div>
+    <p>The delivery is easy an the refund is even easiest. Just choose the product you'd like to return without further explanations and send us the item back.</p>
+  </div>
+</section>
 {% endblock %}
 
 
