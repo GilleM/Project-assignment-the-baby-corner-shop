@@ -75,17 +75,8 @@
     - As a customer, I would like to see what the website is selling, 
     - As a customer, I would like to be able to navigate the website easily and possibly search by a category and by name and to sort them by price
     - As a customer, I would like to see some information about the company and contact the company
-  
- 
-
-
-  - Shopping.
-    - As a customer, I would like to see the product price and description.
-    - As a customer, I would like to be able to add products to my shopping cart.
-    - As a customer, I would like to be notified when I complete interactions with the site.
-    - As a customer, I would like to be able to edit my shopping cart.
-    - As a customer, I would like to be able to checkout easily.
-    - As a customer, I would like to receive confirmation of my order.
+    - As a customer buying the product, I would like to see the product price and description and add products to my shopping cart.
+    - I would like to be able to edit my shopping cart, checkout easily and receive confirmation of my order.
 
   - Account.
     - As a customer, I would like to save my details to an account.
@@ -93,10 +84,8 @@
     - As a customer, I would like to leave a review of the company.
 
 - Website owner.
-  - As the business owner, I would like to be able to edit and add products easily.
-  - As the business owner, I would like to be able to delete products.
-  - As the business owner, I would like to have access to an admin section. 
-  - As the business owner, I would like my customers to be able to shop on the site easily.
+  - As the business owner, I would like to be able to add, edit and delete products easily and have my customers being able to shop on the site.
+
 
 
 ### WireFrames
@@ -104,11 +93,11 @@
 - I've created WireFrames using Balsamiq and have included the links to access them in pdf form.
 
   - Phone
-    - [Wireframes for phones.](readme-images/wireframes/milestone4-mobile-wireframes.pdf)
+    - [Wireframes for phones.](readme_images/wireframes/Phone_view.pdf)
   - Tablet
-    - [Wireframes for tablets.](readme-images/wireframes/milestone4-tablet-wireframes.pdf)
+    - [Wireframes for tablets.](readme-images/wireframes/Tablet_view.pdf)
   - Desktop
-    - [Wireframes for desktops.](readme-images/wireframes/milestone4-desktop-wireframes.pdf)
+    - [Wireframes for desktops.](readme-images/wireframes/Desktop_view.pdf)
 
 
 ## Testing
